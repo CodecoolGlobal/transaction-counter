@@ -21,6 +21,7 @@ public class TransactionReader {
             final String[] split = str.split(",");
             csvTransactionsList.add(new Transaction(split[0], Integer.parseInt(split[1])));
         }
+        /// todo ayayhahah
 
         final Path csvTransactions2 = Paths.get("src/main/resources/transactions2.csv");
         final List<String> csvTransactions2Strings = Files.readAllLines(csvTransactions2);
